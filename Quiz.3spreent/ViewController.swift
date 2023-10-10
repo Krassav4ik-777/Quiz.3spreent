@@ -9,15 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var buttonCounter: UILabel!
-    var namber = 0
+    var number = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonCounter.text = "\(namber)"
+        buttonCounter.text = "\(number)"
         // Do any additional setup after loading the view.
         
     }
     @IBAction func buttonTouch(_ sender: Any) {
-        namber += 1
-        buttonCounter.text = "Значение счётчика: \(namber)"
+        number += 1
+        buttonCounter.text = "Значение счётчика: \(number)"
     }
 }
